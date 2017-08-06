@@ -10,4 +10,7 @@ self: super:
       };
     };
   };
+
+  webapp-template-hs = self.haskell.lib.disableSharedExecutables
+    self.haskell.packages.ghc802.webapp-template;
 }
